@@ -20,7 +20,7 @@ will sendNACK signal to client.
 # PROGRAM :
 
 # CLIENT:
-
+```
 import socket
 s = socket.socket()
 host = socket.gethostname()
@@ -39,9 +39,9 @@ f.close()
 print('Successfully get the file')
 s.close()
 print('connection closed')
-
+```
 # SERVER:
-
+```
 import socket
 port = 60000
 s = socket.socket()
@@ -63,7 +63,7 @@ f.close()
 print('Done sending')
 conn.send('Thank you for connecting'.encode())
 conn.close()
-
+```
 
 
 # OUTPUT :
